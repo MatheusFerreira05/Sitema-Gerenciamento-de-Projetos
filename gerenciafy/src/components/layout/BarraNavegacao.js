@@ -1,18 +1,28 @@
 import { Link } from 'react-router-dom'
 import Container from './Container'
-import style from './BarraNavegacao.module.css'
+import styles from './BarraNavegacao.module.css'
 import logo from '../../img/logo.png'
 
 function BarraNavegacao(){
 
     return(
-        <nav>
+        <nav className={styles.navbar}>
             <Container>
                 <Link to='/'><img src={logo} alt='Logo gerenciafy'/></Link>
-                <Link to='/'>Home</Link>
-                <Link to='/empresa'>Empresa</Link>
-                <Link to='/contato'>Contato</Link>
-                <Link to='/novoprojeto'>Novo Projeto</Link>
+                <ul className={styles.lista}>
+                    <li className={styles.item}>
+                        <Link to='/'>Home</Link>
+                    </li>
+                    <li className={styles.item}>
+                        <Link to='/empresa'>Empresa</Link>
+                    </li>
+                    <li className={styles.item}>
+                        <Link to='/contato'>Contato</Link>
+                    </li>
+                    <li className={styles.item}>
+                        <Link to='/novoprojeto'>Novo Projeto</Link>
+                    </li>
+                </ul>
             </Container>
         </nav>
     )
