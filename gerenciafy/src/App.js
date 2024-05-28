@@ -3,6 +3,7 @@ import Contato from './components/pages/Contato';
 import Home from './components/pages/Home';
 import Empresa from './components/pages/Empresa';
 import NovoProjeto from './components/pages/NovoProjeto';
+import Projetos from './components/pages/Projetos';
 
 import Container from './components/layout/Container';
 import BarraNavegacao from './components/layout/BarraNavegacao';
@@ -15,6 +16,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Container customClass='min_height'><Home /></Container>} />
+        <Route path='/projetos' element={<Container><Projetos /></Container>} />
         <Route path='/empresa' element={<Container><Empresa /></Container>} />
         <Route path='/contato' element={<Container><Contato /></Container>} />
         <Route path='/novoprojeto' element={<Container><NovoProjeto /></Container>} />
