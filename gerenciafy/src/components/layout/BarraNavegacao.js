@@ -6,14 +6,15 @@ import logo from '../../img/logo.png'
 function BarraNavegacao(){
 
     return(
-        <>
-        <ul>
-            <Link to='/'>Home</Link>
-            <Link to='/empresa'>Empresa</Link>
-            <Link to='/contato'>Contato</Link>
-            <Link to='/novoprojeto'>Novo Projeto</Link>
-        </ul>
-        </>
+        <nav>
+            <Container>
+                <Link to='/'><img src={logo} alt='Logo gerenciafy'/></Link>
+                <Link to='/'>Home</Link>
+                <Link to='/empresa'>Empresa</Link>
+                <Link to='/contato'>Contato</Link>
+                <Link to='/novoprojeto'>Novo Projeto</Link>
+            </Container>
+        </nav>
     )
 }
 
